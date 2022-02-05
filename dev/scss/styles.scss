@@ -1,0 +1,13 @@
+@import "../blocks/variables.scss";
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    font-family:$oleoScript;
+    background:$bg;
+}

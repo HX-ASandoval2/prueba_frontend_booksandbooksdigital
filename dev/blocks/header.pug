@@ -1,8 +1,7 @@
 header.header
-    h1.page__title #{page}
-    nav.menu
+    a.page_home(href='/'): h1.page__title #{page}
+    input.dn(id='GPM' type='checkbox')
+    label.btn_menu(for='GPM')
+    nav#menu.menu
         each item in pages
-            if item === 'Welcome'
-                a.menu__item('/') #{item}
-            else
                 a.menu__item(href= item + '.html') #{item}

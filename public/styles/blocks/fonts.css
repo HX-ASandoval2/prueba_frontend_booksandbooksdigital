@@ -1,0 +1,12 @@
+@font-face {
+  font-family: OleoScriptBold;
+  src: url("/res/fonts/OleoScript-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url("/res/fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: OpenSans;
+  src: url("/res/fonts/OpenSans-Regular.ttf");
+}

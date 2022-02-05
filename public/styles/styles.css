@@ -1,4 +1,80 @@
-@import url("../../public/res/fonts/OleoScript-Bold.ttf");
+.dn {
+  display: none;
+  opacity: 0;
+}
+.dn:checked ~ .menu {
+  left: 0;
+}
+.dn:checked + label::before {
+  content: "cerrar";
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1em;
+  height: 5em;
+}
+
+.page__title {
+  color: #f03e3e;
+  font-family: OleoScriptBold;
+  font-weight: 500;
+}
+
+.page_home {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.btn_menu {
+  display: none;
+  cursor: pointer;
+  color: #ffff;
+}
+.btn_menu::before {
+  display: table;
+  content: "Menu";
+}
+@media screen and (max-width: 640px) {
+  .btn_menu {
+    display: block;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu__item {
+  padding: 0.2em 1em;
+  margin: 0 0.5em;
+  color: #4f4d4d;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 0.5s;
+  transition-timing-function: cubic-bezier(0.15, 0.65, 0.54, 0.93);
+}
+.menu__item:hover {
+  color: #ffff;
+  background-color: #444343;
+  border-radius: 4px;
+}
+
+@font-face {
+  font-family: OleoScriptBold;
+  src: url("/res/fonts/OleoScript-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url("/res/fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: OpenSans;
+  src: url("/res/fonts/OpenSans-Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +83,12 @@
 }
 
 html {
-  font-family: "OleoScript-Bold";
-  background: url("../../public/res/images/bg01.png");
+  font-family: OpenSans;
+  background: url("/res/images/bg01.png");
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,4 +1,6 @@
-@import "../blocks/variables.scss";
+@import 'blocks/variables.scss';
+@import 'blocks/header.scss';
+@import 'blocks/fonts.scss';
 
 * {
     margin:0;
@@ -8,6 +10,12 @@
 }
 
 html {
-    font-family:$oleoScript;
-    background:$bg;
+    font-family:OpenSans;
+    background:url('/res/images/bg01.png')
+}
+
+body {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
 }

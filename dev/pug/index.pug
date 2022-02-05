@@ -1,2 +1,47 @@
 extends ../templates/template
 block append config
+block intro 
+    .intro
+        h1.intro__title Hi.This is Lorem.
+        p.intro__text Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+        a.buttonBlue(href='#') Ok let's go
+        a.intro__buttonInfo(href='#') More info
+
+block cards 
+    .cards
+        .cards__item
+            .card__img
+                img(src='/res/images/pexels-despierres-cécile-298986.jpg', alt='Nature' width='200')
+                h2.card__title Put something here
+            .card__text 
+                h3.card__titleText Maybe here as well I think
+                p.card__subText Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.
+        .cards__item
+            .card__img
+                img(src='/res/images/pexels-stephan-seeber-1054201.jpg', alt='Mountain' width='200')
+                h2.card__title An interesting title
+            .card__text 
+                h3.card__titleText This is also an interesting subtitle
+                p.card__subText Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.
+        .cards__item
+            .card__img
+                img(src='/res/images/pexels-stefan-gabriel-naghi-912617.jpg', alt='Train' width='200')
+                h2.card__title Oh, and finally...
+            .card__text 
+                h3.card__titleText Here's another intriguing subtitle
+                p.card__subText Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.
+block about
+    .aboutStuff
+        h3.aboutStuffTitle Interesting stuff 
+        .aboutStuffImg 
+            img(src='/res/images/pic04.jpg' alt='brown')
+            img(src='/res/images/pic05.jpg' alt='pink')
+            img(src='/res/images/pic06.jpg' alt='darkBlue')
+            img(src='/res/images/pic07.jpg' alt='gray')
+        .aboutStuffButton 
+            a.buttonBlue(href='#') More
+    .aboutText
+        h2.aboutTextTitle So what's this all about?
+        p.card__subText Lorem Ipsum es simplemente el texto de relleno de las imprentas y arcivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconociso usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que también ingresó como texto de relleno en documentos electrónicos , quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenían pasajes de Lorem Ipsum, y más recientemente con software  de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum. Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.
+        a.buttonBlue(href='#') Continue Reading
+        

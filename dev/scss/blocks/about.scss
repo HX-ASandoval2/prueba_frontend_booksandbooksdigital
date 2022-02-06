@@ -13,6 +13,7 @@
     .aboutStuffTitle {
         font-family: OpenSansBold;
         margin-bottom:18px;
+        font-size: calc(0.7em + 1vw);
     }
     .aboutStuffImg img{
         flex-direction: row;
@@ -63,6 +64,7 @@
     .aboutTextTitle {
         font-family: OpenSansBold;
         margin-bottom:30px;
+        font-size: calc(.8em + 1vw);
     }
     .buttonAbout {
         width:40%;
@@ -97,6 +99,43 @@
             text-decoration: none;
             margin:12px;
             color:$white;
+        }
+    }
+}
+
+//-----Responsive---------
+@media screen and (max-width: 800px) {
+    .containtAbout {
+        height:auto;
+        padding: 40px;
+    }
+    .aboutStuff {
+        width:60vh;
+        margin-right: 4px;
+        .aboutStuffTitle {
+            font-family: OpenSansBold;
+            text-align: center;
+        }
+        .aboutStuffImg img{
+            padding: 2px;
+        }
+        .aboutStuffButton {
+            width:70%;
+            margin:10px;
+
+            .more {
+                font-size: 15px;
+                margin:10px;
+            }
+        }
+    }
+    .aboutText {
+        width:100vh;
+        .aboutTextTitle {
+            margin-bottom:20px;
+        }
+        .buttonAbout {
+            width:60%;
         }
     }
 }

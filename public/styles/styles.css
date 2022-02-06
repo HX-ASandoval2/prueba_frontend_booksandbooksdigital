@@ -81,6 +81,11 @@
     font-size: 10px;
   }
 }
+@media screen and (max-width: 450px) {
+  .menu {
+    font-size: 7px;
+  }
+}
 .intro {
   max-width: 100%;
   height: auto;
@@ -288,6 +293,7 @@
 .aboutStuff .aboutStuffTitle {
   font-family: OpenSansBold;
   margin-bottom: 18px;
+  font-size: calc(0.7em + 1vw);
 }
 .aboutStuff .aboutStuffImg img {
   flex-direction: row;
@@ -339,6 +345,7 @@
 .aboutText .aboutTextTitle {
   font-family: OpenSansBold;
   margin-bottom: 30px;
+  font-size: calc(0.8em + 1vw);
 }
 .aboutText .buttonAbout {
   width: 40%;
@@ -376,6 +383,42 @@
   color: #fdfdfd;
 }
 
+@media screen and (max-width: 800px) {
+  .containtAbout {
+    height: auto;
+    padding: 40px;
+  }
+
+  .aboutStuff {
+    width: 60vh;
+    margin-right: 4px;
+  }
+  .aboutStuff .aboutStuffTitle {
+    font-family: OpenSansBold;
+    text-align: center;
+  }
+  .aboutStuff .aboutStuffImg img {
+    padding: 2px;
+  }
+  .aboutStuff .aboutStuffButton {
+    width: 70%;
+    margin: 10px;
+  }
+  .aboutStuff .aboutStuffButton .more {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .aboutText {
+    width: 100vh;
+  }
+  .aboutText .aboutTextTitle {
+    margin-bottom: 20px;
+  }
+  .aboutText .buttonAbout {
+    width: 60%;
+  }
+}
 .card__footer {
   display: flex;
   padding: 2em;

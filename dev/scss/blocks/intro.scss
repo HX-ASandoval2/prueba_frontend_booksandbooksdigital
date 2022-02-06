@@ -90,7 +90,6 @@
         }
         .intro__text {
             align-items: center;
-            font-size: 20px;
             padding-right:10em;
             text-decoration: none;
             font-size: calc(0.7em + 1vw);
@@ -99,5 +98,50 @@
     
 }
 
+//------------Responsive------------
+@media screen and (max-width: 800px) {
+    .intro {
+        padding:1.5em;
+    
+        .intro_right {
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-right: 4em;
+    
+            .buttonLetsgo {
+                flex-direction:column;
+                margin:4px;
+                padding-left:10px;
+                padding-right:10px;
+                .buttonBlue {
+                    margin:4px;
+                }
+            }
+            .buttonMoreInfo {
+                flex-direction: column;
+    
+                .buttonInfo {
+                    font-size: calc(0.7em + 1vw);
+                    margin-left:4px;
+                    padding-left: 12px;
+                }
+                .moreInfo {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 2px;
+                }
+            }
+        }
+        .intro_left {
+            padding-left: 4em;
+    
+            .intro__text {
+                padding-right:6em;
+                font-size: calc(0.7em + 1vw);
+            }
+        }
+        
+    }
+}
 
 

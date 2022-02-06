@@ -1,0 +1,103 @@
+.containtAbout {
+    background-color: $white;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width:100vw;
+    height:500px;
+    padding: 40px;
+    color:$black;
+}
+.aboutStuff {
+    width:60vh;
+    .aboutStuffTitle {
+        font-family: OpenSansBold;
+        margin-bottom:18px;
+    }
+    .aboutStuffImg img{
+        flex-direction: row;
+        justify-content:space-evenly;
+        padding: 4px;
+        border-radius: 8px;
+    }
+    .aboutStuffButton {
+        width:32%;
+        background:$light-blue;
+        border-radius: 4px;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        margin:10px;
+        padding:2px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            .moreImg {
+                opacity: 0.7;
+                transform: rotateY(-360deg);
+                transition: 2.5s;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            background-color: $gray;
+            transition: 1.5s;
+        }
+        .moreImg {
+            width: 18px;
+            height: 18px;
+            margin-left: 12px;
+        }
+        .more {
+            font-family: OpenSansBold;
+            text-decoration: none;
+            font-size: 20px;
+            margin:12px;
+            color:$white;
+        }
+    }
+}
+.aboutText {
+    width:90vh;
+    line-height: 1em;
+    .aboutTextTitle {
+        font-family: OpenSansBold;
+        margin-bottom:30px;
+    }
+    .buttonAbout {
+        width:40%;
+        background:$light-blue;
+        border-radius: 4px;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:18px;
+        padding:2px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            .continue {
+                opacity: 0.7;
+                transform: rotateY(-360deg);
+                transition: 2.5s;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            background-color: $gray;
+            transition: 1.5s;
+        }
+        .continue {
+            width: 20px;
+            height: px;
+            margin-left: 12px;
+        }
+        .reading {
+            font-family: OpenSansBold;
+            text-decoration: none;
+            margin:12px;
+            color:$white;
+        }
+    }
+}
+

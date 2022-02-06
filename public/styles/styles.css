@@ -324,17 +324,12 @@
   color: #fdfdfd;
 }
 
-.footer {
+.card__footer {
   display: flex;
   padding: 2em;
   color: #444343;
   align-content: center;
   margin-left: 8%;
-}
-
-.card__footer {
-  display: flex;
-  flex-direction: row;
 }
 
 .containerRandom {
@@ -343,11 +338,48 @@
 }
 
 .containerContact {
+  padding-top: 20px;
   width: 100%;
 }
 
+.footer_title {
+  font-family: OpenSansBold;
+  margin-bottom: 16px;
+}
+
+.dates__item {
+  font-size: 10px;
+  color: #606060;
+  line-height: 2em;
+}
+
+.icons {
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.icons img {
+  margin: 4px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.containerCopyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.copyrightImg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
 @media screen and (max-width: 500px) {
-  .cardContainer {
+  .card__footer {
     flex-direction: column;
   }
 }

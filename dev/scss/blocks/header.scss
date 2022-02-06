@@ -33,7 +33,7 @@
     color:$white;
     &::before {
         display:table;
-        content:'Menu';
+        content:'';
     }
     @media screen and (max-width:640px){
         display:block;

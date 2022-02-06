@@ -324,6 +324,33 @@
   color: #fdfdfd;
 }
 
+.footer {
+  display: flex;
+  padding: 2em;
+  color: #444343;
+  align-content: center;
+  margin-left: 8%;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.containerRandom {
+  margin: 5px;
+  padding: 16px;
+}
+
+.containerContact {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+}
 * {
   margin: 0;
   padding: 0;

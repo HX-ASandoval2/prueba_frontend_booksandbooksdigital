@@ -1,0 +1,27 @@
+.footer {
+    display:flex;
+    padding:2em;
+    color:$black;
+    align-content:center;
+    margin-left: 8%;
+}
+.card__footer {
+    display:flex;
+    flex-direction:row;
+    
+}
+.containerRandom {
+    margin:5px;
+    padding: 16px;
+}
+.containerContact {
+    width:100%
+}
+
+
+//---------------Responsive----------------
+@media screen and (max-width: 500px){
+    .cardContainer {
+        flex-direction:column;
+    }
+}

@@ -1,11 +1,18 @@
 extends ../templates/template
 block append config
 block intro 
-    .intro
-        h1.intro__title Hi.This is Lorem.
-        p.intro__text Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-        a.buttonBlue(href='#') Ok let's go
-        a.intro__buttonInfo(href='#') More info
+    .container
+        .intro
+            .intro_left 
+                h1.intro__title Hi.This is Lorem.
+                p.intro__text Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+            .intro_right
+                .buttonLetsgo
+                    a.buttonBlue(href='#') Ok let's go
+                    img.letsgoImg(src="/res/icons/arrow.png", alt="let's go")
+                .buttonMoreInfo
+                    a.buttonInfo(href='#') More info
+                    img.moreInfo(src="/res/icons/question.png", alt="more info")
 
 block cards 
     .cards

@@ -1,6 +1,8 @@
 @import 'blocks/variables.scss';
-@import 'blocks/header.scss';
 @import 'blocks/fonts.scss';
+@import 'blocks/header.scss';
+@import 'blocks/intro.scss';
+
 
 * {
     margin:0;
@@ -11,11 +13,19 @@
 
 html {
     font-family:OpenSans;
-    background:url('/res/images/bg01.png')
+    background-color: $light-gray
 }
 
 body {
     min-height: 100vh;
     display:flex;
     flex-direction: column;
+    background:url('/res/images/bg01.png')
+}
+.container {
+    width: 80%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:2em;
 }
